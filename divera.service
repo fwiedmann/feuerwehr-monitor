@@ -1,0 +1,10 @@
+[Unit]
+Description=The divera montitor service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/BENUTZER/code/simple_wsgi_server.py
+
+[Install]
+WantedBy=multi-user.target
